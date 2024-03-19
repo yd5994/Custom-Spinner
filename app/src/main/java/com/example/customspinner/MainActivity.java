@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         for (int i = 0; i < countries.length; i++) {
             states.add(new State(countries[i],capital_city[i],imgs[i]));
         }
-//        customAdapter = new CustomAdapter(this, imgs, countries);
-//        spin.setAdapter(customAdapter);
+        customAdapter = new CustomAdapter(this, imgs, countries);
+        spin.setAdapter(customAdapter);
 
-        stateAdapter = new StateAdapter(this, states);
-        spin.setAdapter(stateAdapter);
+//        stateAdapter = new StateAdapter(this, states);
+//        spin.setAdapter(stateAdapter);
     }
 
     @Override
